@@ -1,0 +1,6 @@
+framework module Pods_GymondoTest_GymondoTestUITests {
+  umbrella header "Pods-GymondoTest-GymondoTestUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
