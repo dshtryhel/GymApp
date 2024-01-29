@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		044B69582B5EE26900E9F840 /* TemplateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B69572B5EE26900E9F840 /* TemplateAPI.swift */; };
+		044B695A2B5EE2AF00E9F840 /* APIManager+Cases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B69592B5EE2AF00E9F840 /* APIManager+Cases.swift */; };
+		044B695C2B5EE44900E9F840 /* APIManager+TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B695B2B5EE44900E9F840 /* APIManager+TargetType.swift */; };
+		044B695E2B5EED1700E9F840 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B695D2B5EED1700E9F840 /* NetworkManager.swift */; };
+		044B69632B5F071300E9F840 /* ExerciseBaseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B69622B5F071300E9F840 /* ExerciseBaseInfo.swift */; };
+		044B69652B5FC36000E9F840 /* MBProgress+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B69642B5FC36000E9F840 /* MBProgress+Rx.swift */; };
+		044B69682B5FC68C00E9F840 /* ExerciseListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B69672B5FC68C00E9F840 /* ExerciseListService.swift */; };
+		049D22CF2B60665500E6F193 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D22CE2B60665500E6F193 /* UIImageView.swift */; };
+		049D22D12B611E3C00E6F193 /* MainResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D22D02B611E3C00E6F193 /* MainResponse.swift */; };
+		049D22D32B61672000E6F193 /* ExerciseDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D22D22B61672000E6F193 /* ExerciseDetailsCoordinator.swift */; };
+		049D22DA2B617D5B00E6F193 /* VariationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D22D82B617D5B00E6F193 /* VariationCollectionViewCell.swift */; };
+		049D22DE2B617DAF00E6F193 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D22DC2B617DAF00E6F193 /* ExerciseTableViewCell.swift */; };
+		049D22E22B617E5500E6F193 /* VariationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D22E12B617E5500E6F193 /* VariationCellViewModel.swift */; };
+		049D22E42B61840500E6F193 /* ExerciseTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D22E32B61840500E6F193 /* ExerciseTableCellViewModel.swift */; };
+		049D22E72B63FE7500E6F193 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D22E62B63FE7500E6F193 /* CustomAlert.swift */; };
+		049D22EC2B645A4E00E6F193 /* ExerciseDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D22EB2B645A4E00E6F193 /* ExerciseDescriptionView.swift */; };
+		049D22EF2B650F3C00E6F193 /* ExerciseDescriptionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D22EE2B650F3C00E6F193 /* ExerciseDescriptionCoordinator.swift */; };
+		049D22F32B65312A00E6F193 /* ExerciseDescriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D22F22B65312A00E6F193 /* ExerciseDescriptionViewModel.swift */; };
+		049D22F52B6554F200E6F193 /* String+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D22F42B6554F200E6F193 /* String+HTML.swift */; };
+		049D22F72B657A4600E6F193 /* ExercisesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D22F62B657A4600E6F193 /* ExercisesCollectionViewCell.swift */; };
+		04A984882B6691B000234F81 /* ExerciseListViewModelUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A984872B6691B000234F81 /* ExerciseListViewModelUnitTests.swift */; };
+		04A9848A2B66956F00234F81 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A984892B66956F00234F81 /* UIColor+Palette.swift */; };
+		04A9848C2B66AEA500234F81 /* ExerciseDetailsViewModelUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9848B2B66AEA500234F81 /* ExerciseDetailsViewModelUnitTests.swift */; };
+		04A984902B66C84B00234F81 /* MainCoordinatorUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9848F2B66C84B00234F81 /* MainCoordinatorUnitTests.swift */; };
+		04BE97C42B5FCEBB00D67D27 /* RxMaterialize+RxDematerialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BE97C32B5FCEBB00D67D27 /* RxMaterialize+RxDematerialize.swift */; };
+		04DB442A2B5AB2E700381641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB44292B5AB2E700381641 /* AppDelegate.swift */; };
+		04DB44332B5AB2E900381641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DB44322B5AB2E900381641 /* Assets.xcassets */; };
+		04DB44362B5AB2E900381641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DB44342B5AB2E900381641 /* LaunchScreen.storyboard */; };
+		04DB445F2B5AE2BA00381641 /* ExerciseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB445E2B5AE2BA00381641 /* ExerciseListViewModel.swift */; };
+		04DB44662B5AE68C00381641 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB44652B5AE68C00381641 /* BaseCoordinator.swift */; };
+		04DB446A2B5AE7D900381641 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB44692B5AE7D900381641 /* MainCoordinator.swift */; };
+		04DB446D2B5BF9BB00381641 /* ViewController+Congfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB446C2B5BF9BB00381641 /* ViewController+Congfigurable.swift */; };
+		04DB44702B5C61FE00381641 /* ExerciseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB446E2B5C61FE00381641 /* ExerciseListViewController.swift */; };
+		04DB44752B5C657600381641 /* ExerciseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB44732B5C657600381641 /* ExerciseDetailsViewController.swift */; };
+		04DB44792B5C6EB300381641 /* ExerciseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB44782B5C6EB300381641 /* ExerciseDetailsViewModel.swift */; };
+		04DB44812B5D938900381641 /* ExerciseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB44802B5D938900381641 /* ExerciseCellViewModel.swift */; };
+		AE1F1D3DAF245A94D5443FCD /* Pods_GymondoTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FC5A61C40ECFDFAF956540 /* Pods_GymondoTestTests.framework */; };
+		DC5EC77FDC5A524B5FF71C02 /* Pods_GymondoTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA6C3A09AA570613C622D82 /* Pods_GymondoTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04DB443D2B5AB2E900381641 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04DB441E2B5AB2E700381641 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04DB44252B5AB2E700381641;
+			remoteInfo = GymondoTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		044B69572B5EE26900E9F840 /* TemplateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateAPI.swift; sourceTree = "<group>"; };
+		044B69592B5EE2AF00E9F840 /* APIManager+Cases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIManager+Cases.swift"; sourceTree = "<group>"; };
+		044B695B2B5EE44900E9F840 /* APIManager+TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIManager+TargetType.swift"; sourceTree = "<group>"; };
+		044B695D2B5EED1700E9F840 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		044B69622B5F071300E9F840 /* ExerciseBaseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseBaseInfo.swift; sourceTree = "<group>"; };
+		044B69642B5FC36000E9F840 /* MBProgress+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MBProgress+Rx.swift"; sourceTree = "<group>"; };
+		044B69672B5FC68C00E9F840 /* ExerciseListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListService.swift; sourceTree = "<group>"; };
+		049D22CE2B60665500E6F193 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		049D22D02B611E3C00E6F193 /* MainResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainResponse.swift; sourceTree = "<group>"; };
+		049D22D22B61672000E6F193 /* ExerciseDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsCoordinator.swift; sourceTree = "<group>"; };
+		049D22D82B617D5B00E6F193 /* VariationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationCollectionViewCell.swift; sourceTree = "<group>"; };
+		049D22DC2B617DAF00E6F193 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
+		049D22E12B617E5500E6F193 /* VariationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationCellViewModel.swift; sourceTree = "<group>"; };
+		049D22E32B61840500E6F193 /* ExerciseTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableCellViewModel.swift; sourceTree = "<group>"; };
+		049D22E62B63FE7500E6F193 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		049D22EB2B645A4E00E6F193 /* ExerciseDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDescriptionView.swift; sourceTree = "<group>"; };
+		049D22EE2B650F3C00E6F193 /* ExerciseDescriptionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDescriptionCoordinator.swift; sourceTree = "<group>"; };
+		049D22F22B65312A00E6F193 /* ExerciseDescriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDescriptionViewModel.swift; sourceTree = "<group>"; };
+		049D22F42B6554F200E6F193 /* String+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTML.swift"; sourceTree = "<group>"; };
+		049D22F62B657A4600E6F193 /* ExercisesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesCollectionViewCell.swift; sourceTree = "<group>"; };
+		04A984872B6691B000234F81 /* ExerciseListViewModelUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewModelUnitTests.swift; sourceTree = "<group>"; };
+		04A984892B66956F00234F81 /* UIColor+Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
+		04A9848B2B66AEA500234F81 /* ExerciseDetailsViewModelUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsViewModelUnitTests.swift; sourceTree = "<group>"; };
+		04A9848F2B66C84B00234F81 /* MainCoordinatorUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorUnitTests.swift; sourceTree = "<group>"; };
+		04BE97C32B5FCEBB00D67D27 /* RxMaterialize+RxDematerialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxMaterialize+RxDematerialize.swift"; sourceTree = "<group>"; };
+		04DB44262B5AB2E700381641 /* GymondoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymondoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DB44292B5AB2E700381641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04DB44322B5AB2E900381641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04DB44352B5AB2E900381641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04DB44372B5AB2E900381641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DB443C2B5AB2E900381641 /* GymondoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymondoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DB445E2B5AE2BA00381641 /* ExerciseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewModel.swift; sourceTree = "<group>"; };
+		04DB44652B5AE68C00381641 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		04DB44692B5AE7D900381641 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		04DB446C2B5BF9BB00381641 /* ViewController+Congfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Congfigurable.swift"; sourceTree = "<group>"; };
+		04DB446E2B5C61FE00381641 /* ExerciseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewController.swift; sourceTree = "<group>"; };
+		04DB44732B5C657600381641 /* ExerciseDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsViewController.swift; sourceTree = "<group>"; };
+		04DB44782B5C6EB300381641 /* ExerciseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsViewModel.swift; sourceTree = "<group>"; };
+		04DB44802B5D938900381641 /* ExerciseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCellViewModel.swift; sourceTree = "<group>"; };
+		04FDAE62B19D7300897FECEB /* Pods-GymondoTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymondoTestTests.release.xcconfig"; path = "Target Support Files/Pods-GymondoTestTests/Pods-GymondoTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		1141402FD525CAB53EF79665 /* Pods-GymondoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymondoTest.release.xcconfig"; path = "Target Support Files/Pods-GymondoTest/Pods-GymondoTest.release.xcconfig"; sourceTree = "<group>"; };
+		287B9CA57F90F8C15B5A9760 /* Pods-GymondoTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymondoTestTests.debug.xcconfig"; path = "Target Support Files/Pods-GymondoTestTests/Pods-GymondoTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		436824A27E48CAFAB2521EDC /* Pods_GymondoTest_GymondoTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymondoTest_GymondoTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FC5A61C40ECFDFAF956540 /* Pods_GymondoTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymondoTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98500527E81F4DEE01B8B4F9 /* Pods-GymondoTest-GymondoTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymondoTest-GymondoTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-GymondoTest-GymondoTestUITests/Pods-GymondoTest-GymondoTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4C9EF16DF3888C3237236B4 /* Pods-GymondoTest-GymondoTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymondoTest-GymondoTestUITests.release.xcconfig"; path = "Target Support Files/Pods-GymondoTest-GymondoTestUITests/Pods-GymondoTest-GymondoTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CAA6C3A09AA570613C622D82 /* Pods_GymondoTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymondoTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9D8F2D6164A279AB9FF54AA /* Pods-GymondoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymondoTest.debug.xcconfig"; path = "Target Support Files/Pods-GymondoTest/Pods-GymondoTest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04DB44232B5AB2E700381641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5EC77FDC5A524B5FF71C02 /* Pods_GymondoTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DB44392B5AB2E900381641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1F1D3DAF245A94D5443FCD /* Pods_GymondoTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		044B69612B5F063E00E9F840 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				044B69622B5F071300E9F840 /* ExerciseBaseInfo.swift */,
+				049D22D02B611E3C00E6F193 /* MainResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		044B69662B5FC65B00E9F840 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				044B69672B5FC68C00E9F840 /* ExerciseListService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		049D22D62B617D0E00E6F193 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				049D22D82B617D5B00E6F193 /* VariationCollectionViewCell.swift */,
+				049D22E12B617E5500E6F193 /* VariationCellViewModel.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		049D22D72B617D2100E6F193 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				049D22DC2B617DAF00E6F193 /* ExerciseTableViewCell.swift */,
+				049D22E32B61840500E6F193 /* ExerciseTableCellViewModel.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		049D22E52B63FE4100E6F193 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				049D22E62B63FE7500E6F193 /* CustomAlert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		049D22EA2B645A2C00E6F193 /* ExerciseDescription */ = {
+			isa = PBXGroup;
+			children = (
+				049D22ED2B650ED100E6F193 /* ExerciseDescriptionViewModel */,
+				049D22EB2B645A4E00E6F193 /* ExerciseDescriptionView.swift */,
+			);
+			path = ExerciseDescription;
+			sourceTree = "<group>";
+		};
+		049D22ED2B650ED100E6F193 /* ExerciseDescriptionViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				049D22F22B65312A00E6F193 /* ExerciseDescriptionViewModel.swift */,
+			);
+			path = ExerciseDescriptionViewModel;
+			sourceTree = "<group>";
+		};
+		04DB441D2B5AB2E700381641 = {
+			isa = PBXGroup;
+			children = (
+				04DB44282B5AB2E700381641 /* GymondoTest */,
+				04DB443F2B5AB2E900381641 /* GymondoTestTests */,
+				04DB44272B5AB2E700381641 /* Products */,
+				419BBCAEEC7D5170C78F662C /* Pods */,
+				99E964053A05F9C692DD041E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04DB44272B5AB2E700381641 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04DB44262B5AB2E700381641 /* GymondoTest.app */,
+				04DB443C2B5AB2E900381641 /* GymondoTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04DB44282B5AB2E700381641 /* GymondoTest */ = {
+			isa = PBXGroup;
+			children = (
+				04DB44642B5AE5A500381641 /* Base */,
+				04DB44632B5AE58800381641 /* Feature */,
+				04DB446B2B5BF97800381641 /* Extensions */,
+				04DB44622B5AE4FA00381641 /* Networking */,
+				04DB44292B5AB2E700381641 /* AppDelegate.swift */,
+				04DB44322B5AB2E900381641 /* Assets.xcassets */,
+				04DB44342B5AB2E900381641 /* LaunchScreen.storyboard */,
+				04DB44372B5AB2E900381641 /* Info.plist */,
+			);
+			path = GymondoTest;
+			sourceTree = "<group>";
+		};
+		04DB443F2B5AB2E900381641 /* GymondoTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				04A9848F2B66C84B00234F81 /* MainCoordinatorUnitTests.swift */,
+				04A9848B2B66AEA500234F81 /* ExerciseDetailsViewModelUnitTests.swift */,
+				04A984872B6691B000234F81 /* ExerciseListViewModelUnitTests.swift */,
+			);
+			path = GymondoTestTests;
+			sourceTree = "<group>";
+		};
+		04DB445B2B5AE23600381641 /* ExerciseList */ = {
+			isa = PBXGroup;
+			children = (
+				04DB446E2B5C61FE00381641 /* ExerciseListViewController.swift */,
+				04DB445D2B5AE28700381641 /* ExerciseListViewModel */,
+				04DB445C2B5AE27200381641 /* Cell */,
+			);
+			path = ExerciseList;
+			sourceTree = "<group>";
+		};
+		04DB445C2B5AE27200381641 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04DB44802B5D938900381641 /* ExerciseCellViewModel.swift */,
+				049D22F62B657A4600E6F193 /* ExercisesCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04DB445D2B5AE28700381641 /* ExerciseListViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				044B69662B5FC65B00E9F840 /* Service */,
+				04DB445E2B5AE2BA00381641 /* ExerciseListViewModel.swift */,
+			);
+			path = ExerciseListViewModel;
+			sourceTree = "<group>";
+		};
+		04DB44622B5AE4FA00381641 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				044B69612B5F063E00E9F840 /* Entities */,
+				044B69572B5EE26900E9F840 /* TemplateAPI.swift */,
+				044B69592B5EE2AF00E9F840 /* APIManager+Cases.swift */,
+				044B695B2B5EE44900E9F840 /* APIManager+TargetType.swift */,
+				044B695D2B5EED1700E9F840 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		04DB44632B5AE58800381641 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				049D22EA2B645A2C00E6F193 /* ExerciseDescription */,
+				04DB44722B5C655200381641 /* ExerciseDetails */,
+				04DB445B2B5AE23600381641 /* ExerciseList */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		04DB44642B5AE5A500381641 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				04DB44652B5AE68C00381641 /* BaseCoordinator.swift */,
+				04DB44692B5AE7D900381641 /* MainCoordinator.swift */,
+				049D22D22B61672000E6F193 /* ExerciseDetailsCoordinator.swift */,
+				049D22EE2B650F3C00E6F193 /* ExerciseDescriptionCoordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		04DB446B2B5BF97800381641 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				049D22E52B63FE4100E6F193 /* Alert */,
+				04DB446C2B5BF9BB00381641 /* ViewController+Congfigurable.swift */,
+				044B69642B5FC36000E9F840 /* MBProgress+Rx.swift */,
+				04BE97C32B5FCEBB00D67D27 /* RxMaterialize+RxDematerialize.swift */,
+				049D22CE2B60665500E6F193 /* UIImageView.swift */,
+				049D22F42B6554F200E6F193 /* String+HTML.swift */,
+				04A984892B66956F00234F81 /* UIColor+Palette.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04DB44722B5C655200381641 /* ExerciseDetails */ = {
+			isa = PBXGroup;
+			children = (
+				049D22D72B617D2100E6F193 /* TableViewCell */,
+				049D22D62B617D0E00E6F193 /* CollectionViewCell */,
+				04DB44732B5C657600381641 /* ExerciseDetailsViewController.swift */,
+				04DB44772B5C6E8B00381641 /* ExerciseDetailsViewModel */,
+			);
+			path = ExerciseDetails;
+			sourceTree = "<group>";
+		};
+		04DB44772B5C6E8B00381641 /* ExerciseDetailsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04DB44782B5C6EB300381641 /* ExerciseDetailsViewModel.swift */,
+			);
+			path = ExerciseDetailsViewModel;
+			sourceTree = "<group>";
+		};
+		419BBCAEEC7D5170C78F662C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9D8F2D6164A279AB9FF54AA /* Pods-GymondoTest.debug.xcconfig */,
+				1141402FD525CAB53EF79665 /* Pods-GymondoTest.release.xcconfig */,
+				98500527E81F4DEE01B8B4F9 /* Pods-GymondoTest-GymondoTestUITests.debug.xcconfig */,
+				A4C9EF16DF3888C3237236B4 /* Pods-GymondoTest-GymondoTestUITests.release.xcconfig */,
+				287B9CA57F90F8C15B5A9760 /* Pods-GymondoTestTests.debug.xcconfig */,
+				04FDAE62B19D7300897FECEB /* Pods-GymondoTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		99E964053A05F9C692DD041E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAA6C3A09AA570613C622D82 /* Pods_GymondoTest.framework */,
+				436824A27E48CAFAB2521EDC /* Pods_GymondoTest_GymondoTestUITests.framework */,
+				52FC5A61C40ECFDFAF956540 /* Pods_GymondoTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04DB44252B5AB2E700381641 /* GymondoTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DB44502B5AB2E900381641 /* Build configuration list for PBXNativeTarget "GymondoTest" */;
+			buildPhases = (
+				987EEF6ABE1A9683CF54AE35 /* [CP] Check Pods Manifest.lock */,
+				04DB44222B5AB2E700381641 /* Sources */,
+				04DB44232B5AB2E700381641 /* Frameworks */,
+				04DB44242B5AB2E700381641 /* Resources */,
+				B6FD47E14051396F945E9A0E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GymondoTest;
+			productName = GymondoTest;
+			productReference = 04DB44262B5AB2E700381641 /* GymondoTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04DB443B2B5AB2E900381641 /* GymondoTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DB44532B5AB2E900381641 /* Build configuration list for PBXNativeTarget "GymondoTestTests" */;
+			buildPhases = (
+				E743C2E6AEAB6AECE12B2834 /* [CP] Check Pods Manifest.lock */,
+				04DB44382B5AB2E900381641 /* Sources */,
+				04DB44392B5AB2E900381641 /* Frameworks */,
+				04DB443A2B5AB2E900381641 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04DB443E2B5AB2E900381641 /* PBXTargetDependency */,
+			);
+			name = GymondoTestTests;
+			productName = GymondoTestTests;
+			productReference = 04DB443C2B5AB2E900381641 /* GymondoTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04DB441E2B5AB2E700381641 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					04DB44252B5AB2E700381641 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					04DB443B2B5AB2E900381641 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 04DB44252B5AB2E700381641;
+					};
+				};
+			};
+			buildConfigurationList = 04DB44212B5AB2E700381641 /* Build configuration list for PBXProject "GymondoTest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04DB441D2B5AB2E700381641;
+			productRefGroup = 04DB44272B5AB2E700381641 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04DB44252B5AB2E700381641 /* GymondoTest */,
+				04DB443B2B5AB2E900381641 /* GymondoTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04DB44242B5AB2E700381641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DB44362B5AB2E900381641 /* LaunchScreen.storyboard in Resources */,
+				04DB44332B5AB2E900381641 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DB443A2B5AB2E900381641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		987EEF6ABE1A9683CF54AE35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GymondoTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6FD47E14051396F945E9A0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GymondoTest/Pods-GymondoTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GymondoTest/Pods-GymondoTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GymondoTest/Pods-GymondoTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E743C2E6AEAB6AECE12B2834 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GymondoTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04DB44222B5AB2E700381641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044B695C2B5EE44900E9F840 /* APIManager+TargetType.swift in Sources */,
+				044B695A2B5EE2AF00E9F840 /* APIManager+Cases.swift in Sources */,
+				044B69632B5F071300E9F840 /* ExerciseBaseInfo.swift in Sources */,
+				044B69682B5FC68C00E9F840 /* ExerciseListService.swift in Sources */,
+				04DB446A2B5AE7D900381641 /* MainCoordinator.swift in Sources */,
+				049D22EF2B650F3C00E6F193 /* ExerciseDescriptionCoordinator.swift in Sources */,
+				04A9848A2B66956F00234F81 /* UIColor+Palette.swift in Sources */,
+				049D22EC2B645A4E00E6F193 /* ExerciseDescriptionView.swift in Sources */,
+				049D22E22B617E5500E6F193 /* VariationCellViewModel.swift in Sources */,
+				044B695E2B5EED1700E9F840 /* NetworkManager.swift in Sources */,
+				049D22E42B61840500E6F193 /* ExerciseTableCellViewModel.swift in Sources */,
+				049D22F52B6554F200E6F193 /* String+HTML.swift in Sources */,
+				049D22D12B611E3C00E6F193 /* MainResponse.swift in Sources */,
+				049D22DA2B617D5B00E6F193 /* VariationCollectionViewCell.swift in Sources */,
+				049D22D32B61672000E6F193 /* ExerciseDetailsCoordinator.swift in Sources */,
+				049D22CF2B60665500E6F193 /* UIImageView.swift in Sources */,
+				04DB44662B5AE68C00381641 /* BaseCoordinator.swift in Sources */,
+				049D22F72B657A4600E6F193 /* ExercisesCollectionViewCell.swift in Sources */,
+				044B69652B5FC36000E9F840 /* MBProgress+Rx.swift in Sources */,
+				04DB446D2B5BF9BB00381641 /* ViewController+Congfigurable.swift in Sources */,
+				04DB44752B5C657600381641 /* ExerciseDetailsViewController.swift in Sources */,
+				04DB442A2B5AB2E700381641 /* AppDelegate.swift in Sources */,
+				04DB44812B5D938900381641 /* ExerciseCellViewModel.swift in Sources */,
+				04DB44702B5C61FE00381641 /* ExerciseListViewController.swift in Sources */,
+				049D22F32B65312A00E6F193 /* ExerciseDescriptionViewModel.swift in Sources */,
+				04DB445F2B5AE2BA00381641 /* ExerciseListViewModel.swift in Sources */,
+				049D22DE2B617DAF00E6F193 /* ExerciseTableViewCell.swift in Sources */,
+				04DB44792B5C6EB300381641 /* ExerciseDetailsViewModel.swift in Sources */,
+				044B69582B5EE26900E9F840 /* TemplateAPI.swift in Sources */,
+				04BE97C42B5FCEBB00D67D27 /* RxMaterialize+RxDematerialize.swift in Sources */,
+				049D22E72B63FE7500E6F193 /* CustomAlert.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DB44382B5AB2E900381641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A984882B6691B000234F81 /* ExerciseListViewModelUnitTests.swift in Sources */,
+				04A984902B66C84B00234F81 /* MainCoordinatorUnitTests.swift in Sources */,
+				04A9848C2B66AEA500234F81 /* ExerciseDetailsViewModelUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04DB443E2B5AB2E900381641 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04DB44252B5AB2E700381641 /* GymondoTest */;
+			targetProxy = 04DB443D2B5AB2E900381641 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04DB44342B5AB2E900381641 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04DB44352B5AB2E900381641 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04DB444E2B5AB2E900381641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04DB444F2B5AB2E900381641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04DB44512B5AB2E900381641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9D8F2D6164A279AB9FF54AA /* Pods-GymondoTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92B6LD9W7U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GymondoTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DS.GymondoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04DB44522B5AB2E900381641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1141402FD525CAB53EF79665 /* Pods-GymondoTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92B6LD9W7U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GymondoTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DS.GymondoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04DB44542B5AB2E900381641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 287B9CA57F90F8C15B5A9760 /* Pods-GymondoTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92B6LD9W7U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DS.GymondoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymondoTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GymondoTest";
+			};
+			name = Debug;
+		};
+		04DB44552B5AB2E900381641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04FDAE62B19D7300897FECEB /* Pods-GymondoTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92B6LD9W7U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DS.GymondoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymondoTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GymondoTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04DB44212B5AB2E700381641 /* Build configuration list for PBXProject "GymondoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DB444E2B5AB2E900381641 /* Debug */,
+				04DB444F2B5AB2E900381641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04DB44502B5AB2E900381641 /* Build configuration list for PBXNativeTarget "GymondoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DB44512B5AB2E900381641 /* Debug */,
+				04DB44522B5AB2E900381641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04DB44532B5AB2E900381641 /* Build configuration list for PBXNativeTarget "GymondoTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DB44542B5AB2E900381641 /* Debug */,
+				04DB44552B5AB2E900381641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04DB441E2B5AB2E700381641 /* Project object */;
+}
